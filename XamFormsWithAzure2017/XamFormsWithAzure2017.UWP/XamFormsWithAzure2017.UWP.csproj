@@ -135,9 +135,9 @@
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XamFormsWithAzure2017\XamFormsWithAzure2017.csproj">
-      <Project>{067ef29a-dd67-4b22-bb9d-e3c0d9a75480}</Project>
-      <Name>XamFormsWithAzure2017</Name>
+    <ProjectReference Include="..\XamFormsWithAzure2017-standard\XamFormsWithAzure2017-standard.csproj">
+      <Project>{0584ef7c-643c-4495-8e86-b3a3e0a52761}</Project>
+      <Name>XamFormsWithAzure2017-standard</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
