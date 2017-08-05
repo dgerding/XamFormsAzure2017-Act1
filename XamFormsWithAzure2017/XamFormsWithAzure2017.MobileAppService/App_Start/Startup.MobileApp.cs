@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Web.Http;
 using Microsoft.Azure.Mobile.Server;
 using Microsoft.Azure.Mobile.Server.Authentication;
 using Microsoft.Azure.Mobile.Server.Config;
-using Owin;
-
 using XamFormsWithAzure2017.MobileAppService.DataObjects;
 using XamFormsWithAzure2017.MobileAppService.Models;
+
+
+using Owin;
+
+
 
 namespace XamFormsWithAzure2017.MobileAppService
 {
@@ -27,7 +31,9 @@ namespace XamFormsWithAzure2017.MobileAppService
                 .ApplyTo(config);
 
             // Use Entity Framework Code First to create database tables based on your DbContext
-            Database.SetInitializer(new DatabaseInitializer());
+            //Database.SetInitializer(new DatabaseInitializer());
+            var migrator = new DbMigrator(new Migrations.Configuration());
+            migrator.Update();
 
             // To prevent Entity Framework from modifying your database schema, use a null database initializer
             // Database.SetInitializer<templateitemsContext>(null);

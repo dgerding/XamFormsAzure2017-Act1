@@ -8,8 +8,8 @@ namespace XamFormsWithAzure2017
 {
     public partial class App : Application
     {
-        public static bool UseMockDataStore = true;
-        public static string AzureMobileAppUrl = "https://XamFormsWithAzure.azurewebsites.net";
+        public static bool UseMockDataStore = false;
+        public static string AzureMobileAppUrl = "https://xamformswithazure2017.azurewebsites.net/";
 
         public App()
         {
