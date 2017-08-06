@@ -13,16 +13,18 @@ backend support. It’s a *slower* quick start, to be sure. But it builds and
 runs, which is nice. It also pivots the template to the .net Standard target for
 the Xamarin.Forms project which is good as it’s the “standard” path ahead.
 
-Note: *I sincerely hope that this little blog post gets in front of the folks at
+<blockquote>
+I sincerely hope that this little blog post gets in front of the folks at
 Xamarin and their colleagues on the Azure side of Microsoft and they come
 together to a common best vision for Xamarin solution templates and “quick
 starts”. My preference is they create a few different flavors of the Xamarin
 Forms solution template: “Basic”, “Persistence-Enabled”, “Persistence and
 Authentication Enabled”. I would think that there should be a flavor for both
 Entity Framework and Node.js backends - or even better a provider-based
-implementation that let you choose at runtime!*
+implementation that let you choose at runtime!
 
 In the meantime, there’s this :)
+</blockquote>
 
 The Repo Is a Walkthrough and the Walkthrough Is a Repo
 -------------------------------------------------------
