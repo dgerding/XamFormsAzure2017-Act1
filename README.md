@@ -122,14 +122,14 @@ working the way you want.
 Configuring a Resource Group in Azure is, by design, a handy way to organize
 related Azure resources for entire projects. They also can help you ensure
 you’re at a pricing tier you need during learning or development.
----
-**NOTE**
+
+<blockquote>
 **Gotcha! Double-Check Your Azure Resource Locations**
 
 I’ve learned the hard way that Azure won’t default to a common service location.
 Make sure that both the Resource Group and the resources you add are
 *geographically close to you* and *all in the same geolocation* as you add them.
----
+<blockquote>
 
 ### Create an Azure Resource Group
 
