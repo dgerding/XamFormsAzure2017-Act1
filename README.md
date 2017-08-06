@@ -129,7 +129,7 @@ you’re at a pricing tier you need during learning or development.
 I’ve learned the hard way that Azure won’t default to a common service location.
 Make sure that both the Resource Group and the resources you add are
 *geographically close to you* and *all in the same geolocation* as you add them.
-<blockquote>
+</blockquote>
 
 ### Create an Azure Resource Group
 
@@ -196,10 +196,12 @@ created earlier will be discoverable and selectable in the drop downs.
 
 ![C:\\Users\\david\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\MatchAppProjectToAzureResources.png](media/b1b4dfd64920c014c8761281a9648ea3.png)
 
+<blockquote>
 **Gotcha: Check your credentials!**
 
 In the upper-right corner of the solution backend dialog box make sure you are
 signed in using the same account you used to create your Azure resources.
+</blockquote>
 
 ### Configure Services/DB Settings
 
@@ -226,11 +228,13 @@ learn how to do that:
 
 <https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning/>
 
+<blockquote>
 **Gotcha! Use the Stable Channel and Match Your Release Channels**
 
 Make your Visual Studio 2017 for Mac and VS Win machines are both on the Stable
 Xamarin channel. You want your two Visual Studio ecosystems talking apples and
 apples.
+</blockquote>
 
 Once you have your Mac build machine configured and you’ve downloaded your iOS
 provisioning certificates for the app to that machine, the important piece of
@@ -264,6 +268,7 @@ properties.
 At this point, the solution should build and each project should be able to
 deploy to a real device and run.
 
+<blockquote>
 **Gotcha! DON’T BLINDLY UPDATE NUGETS**
 
 My developer friends would tease me that I had a near fetish for updating
@@ -276,6 +281,7 @@ Don’t do that on this walk-through.
 You must manage the Nuget dependencies carefully - even the *sequence of
 installs* in some cases - to get around some known issues with some of the
 libraries to get everything to work.
+</blockquote>
 
 Step 4. Connecting the Azure-based Persistence
 ----------------------------------------------
