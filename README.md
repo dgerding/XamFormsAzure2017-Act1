@@ -22,7 +22,7 @@ Authentication Enabled”. I would think that there should be a flavor for both
 Entity Framework and Node.js backends - or even better a provider-based
 implementation that let you choose at runtime!*
 
-In the meantime, there’s this
+In the meantime, there’s this :)
 
 The Repo Is a Walkthrough and the Walkthrough Is a Repo
 -------------------------------------------------------
