@@ -2,6 +2,8 @@ Xamarin Forms with .Net Standard and Azure Client 4.x - A Real-World Quickstart
 ------------
 \@DavidGerding, August 5, 2017
 
+![C:\\Users\\david\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\netStandardRunningProofOfLife.png](media/a608a961c8fc6a99ed4468917f89b6da.png)
+
 In my estimation, as of today, here’s the real-world way to get Xamarin Forms
 working with Visual Studio 2017 and the current Azure Mobile Client (4.0) for
 backend support. It’s a *slower* quick start, to be sure. But it builds and
@@ -86,11 +88,9 @@ Act 1 – Getting the Solution Running and Talking to Azure
 
 At the end of the “first act” we’ll have both local and remote Azure persistence
 running and, significantly, a .net Standard Xamarin Forms project that really
-runs on iOS, Android and UWP:
+runs on iOS, Android and UWP.
 
-![C:\\Users\\david\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\netStandardRunningProofOfLife.png](media/a608a961c8fc6a99ed4468917f89b6da.png)
-
-The functionality above is functionally equivalent to the last step of the Azure
+The functionality is equivalent to the last step of the Azure
 Mobile Getting Started here:
 
 <https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-xamarin-forms-get-started-offline-data>
