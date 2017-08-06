@@ -54,12 +54,14 @@ example, it includes the use of dependency service etc… **So, this walkthrough
 uses the Visual Studio 2017 Windows solution template.**
 
 <blockquote>
+
 **Gotcha! Use Xamarin Updater**
 
 Make sure you have all the standard Visual Studio 2017 updates installed. Also,
 ensure that you have installed the Xamarin Updater before you proceed. Then make
 sure you have all the latest (stable channel) updates. This walkthrough uses the
 newest stable Xamarin Forms “vsix” Template extension.
+
 </blockquote>
 
 ![](media/5701b17ff18ed834f87e1e3360b4c2df.png)
@@ -121,11 +123,13 @@ related Azure resources for entire projects. They also can help you ensure
 you’re at a pricing tier you need during learning or development.
 
 <blockquote>
+
 **Gotcha! Double-Check Your Azure Resource Locations**
 
 I’ve learned the hard way that Azure won’t default to a common service location.
 Make sure that both the Resource Group and the resources you add are
 *geographically close to you* and *all in the same geolocation* as you add them.
+
 </blockquote>
 
 ### Create an Azure Resource Group
@@ -194,10 +198,12 @@ created earlier will be discoverable and selectable in the drop downs.
 ![C:\\Users\\david\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\MatchAppProjectToAzureResources.png](media/b1b4dfd64920c014c8761281a9648ea3.png)
 
 <blockquote>
+
 **Gotcha: Check your credentials!**
 
 In the upper-right corner of the solution backend dialog box make sure you are
 signed in using the same account you used to create your Azure resources.
+
 </blockquote>
 
 ### Configure Services/DB Settings
@@ -226,11 +232,13 @@ learn how to do that:
 <https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning/>
 
 <blockquote>
+
 **Gotcha! Use the Stable Channel and Match Your Release Channels**
 
 Make your Visual Studio 2017 for Mac and VS Win machines are both on the Stable
 Xamarin channel. You want your two Visual Studio ecosystems talking apples and
 apples.
+
 </blockquote>
 
 Once you have your Mac build machine configured and you’ve downloaded your iOS
@@ -266,6 +274,7 @@ At this point, the solution should build and each project should be able to
 deploy to a real device and run.
 
 <blockquote>
+
 **Gotcha! DON’T BLINDLY UPDATE NUGETS**
 
 My developer friends would tease me that I had a near fetish for updating
@@ -278,6 +287,7 @@ Don’t do that on this walk-through.
 You must manage the Nuget dependencies carefully - even the *sequence of
 installs* in some cases - to get around some known issues with some of the
 libraries to get everything to work.
+
 </blockquote>
 
 Step 4. Connecting the Azure-based Persistence
@@ -348,8 +358,6 @@ data bound to traditional SQL data storage.
 For an introduction to the Entity Framework and the Migration processes you can
 check out these related links:
 
-[todo: add links]
-
 <https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/migrations-and-deployment-with-the-entity-framework-in-an-asp-net-mvc-application>
 
 <https://msdn.microsoft.com/en-us/library/jj591621(v=vs.113).aspx>
@@ -367,6 +375,8 @@ dynamic environments like contemporary dev ops culture with frequent schema
 changes. Since I am no entity framework expert I was pleased to simply get this
 to work :-)
 
+<blockquote>
+
 **Gotcha! Make Sure the App Service Project is Set as the Startup Project**
 
 There’s a curious little trick to ensuring that the enable migrations step goes
@@ -374,6 +384,8 @@ off without a hitch. Before you begin make sure you set the app service project
 as the startup project within the solution. Failing to do so can throw an error
 where Enable-Migration process says as it can’t find the connection string. The
 error will look like this. You’ve been warned.
+
+</blockquote>
 
 ![C:\\Users\\david\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\EnableMigrationsConnectionStringError.png](media/86778801110d10595cb12acb2c5bcba2.png)
 
@@ -458,12 +470,19 @@ We’re nearly there!
 The last step is to convert the existing Xamarin.Forms base project from a PCL
 target to a .net Standard target.
 
+<blockquote>
+
 **Gotcha – Don’t Bother “Converting” PCL to .Net Standard via Project
 Properties**
 
 Unfortunately, the tooling to convert a PCL project to a .net standard project
 doesn’t work for Xamarin Forms projects yet. You need instead to “create and
-copy”. Thanks to [todo: add link] for the early help with this conversion.
+copy”. Thanks to Oren Novotny
+https://oren.codes/2017/04/23/using-xamarin-forms-with-net-standard-vs-2017-edition/
+
+for early guidance with this conversion.
+
+</blockquote>
 
 ### Add a .net Standard Class Project
 
@@ -514,6 +533,8 @@ project.
 
 ![C:\\Users\\david\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\Use40AzureMobile.png](media/1b23509b1cdf356d8796e65d50d995fb.png)
 
+<blockquote>
+
 **Gotcha – Use “Azure Mobile Client” as the Nuget Search Term for
 Microsoft.Azure.Mobile.Client**
 
@@ -521,6 +542,8 @@ For some strange reason, probably something about metadata, using the full Nuget
 name for the Azure Mobile Client, Microsoft.Azure.Mobile.Client, even without
 the periods, doesn’t return the Nuget package in the Nuget package search
 results. Using “Azure Mobile Client” works.
+
+</blockquote>
 
 Use the Nuget Package Manager again and update all references in the solution to
 **Microsoft.Azure.Mobile.Client** and
