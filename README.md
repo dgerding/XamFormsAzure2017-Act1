@@ -1,11 +1,8 @@
----
-Xamarin Forms with .Net Standard and Azure Client 4.x: A Real-World Quickstart
----
 
-\@DavidGerding, August 5, 2017
 
-What’s This?
+Xamarin Forms with .Net Standard and Azure Client 4.x
 ------------
+\@DavidGerding, August 5, 2017
 
 In my estimation, as of today, here’s the real-world way to get Xamarin Forms
 working with Visual Studio 2017 and the current Azure Mobile Client (4.0) for
