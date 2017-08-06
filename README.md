@@ -1,5 +1,4 @@
-Xamarin Forms with .Net Standard and Azure Client 4.x
-A Real-World Quickstart
+Xamarin Forms with .Net Standard and Azure Client 4.x - A Real-World Quickstart
 ------------
 \@DavidGerding, August 5, 2017
 
