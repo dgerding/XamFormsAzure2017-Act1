@@ -56,12 +56,14 @@ somewhat tighter and more contemporary notion of Xamarin Forms practices. For
 example, it includes the use of dependency service etc… **So, this walkthrough
 uses the Visual Studio 2017 Windows solution template.**
 
+<blockquote>
 **Gotcha! Use Xamarin Updater**
 
 Make sure you have all the standard Visual Studio 2017 updates installed. Also,
 ensure that you have installed the Xamarin Updater before you proceed. Then make
 sure you have all the latest (stable channel) updates. This walkthrough uses the
 newest stable Xamarin Forms “vsix” Template extension.
+</blockquote>
 
 ![](media/5701b17ff18ed834f87e1e3360b4c2df.png)
 
